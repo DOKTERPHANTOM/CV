@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unathi Katlego Mthethwa | CV</title>
+  <style>
+    :root {
+      --primary: #159ae1;
+      --accent: #14aab8;
+      --text: #f1f5f9;
+      --muted: #cbd2dd;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('3D.jpg') center center / cover no-repeat;
+      color: var(--text);
+      height: 100vh;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(246, 246, 246, 0.195); /* dark overlay for text readability */
+      z-index: 0;
+    }
+
+    .card {
+      position: relative;
+      background: rgba(7, 16, 93, 0.65); /* semi-transparent dark card */
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 800px;
+      width: 100%;
+      z-index: 1;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      color: var(--text);
+    }
+
+    h2 {
+      font-size: 1em;
+      font-weight: normal;
+      color: var(--muted);
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 14px 24px;
+      font-size: 1em;
+      font-weight: 600;
+      border-radius: 10px;
+      transition: 0.2s ease-in-out;
+      border: 2px solid transparent;
+    }
+
+    .btn.cv {
+      background-color: var(--primary);
+      color: rgb(239, 6, 6);
+    }
+
+    .btn.cv:hover {
+      background-color: transparent;
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .btn.project {
+      background-color: var(--accent);
+      color: white;
+    }
+
+    .btn.project:hover {
+      background-color: transparent;
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .btn.contact {
+      background-color: white;
+      color: #0f172a;
+    }
+
+    .btn.contact:hover {
+      background-color: transparent;
+      border-color: white;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 20px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      h2 {
+        font-size: 0.95em;
+      }
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Unathi Katlego Mthethwa</h1>
+
+    <h2>
+  <p>I am a young, enthusiastic technology student looking to get my feet wet in the industry. I’m a 
+    20-year-old aspiring IT professional with a focus on networking, cybersecurity,
+     and creative problem solving. I’m currently pursuing a degree in Information Technology at Eduvos,
+      where I’m honing my skills across various IT domains.</p>
+
+  <p>I've learned multiple programming languages including Python, C#, and C++. I’m passionate about 
+    using technology to solve real-world problems, and I’ve been introduced to tools like 
+    Cisco Packet Tracer, Linux, and AWS Cloud Computing. I'm always eager to learn, adapt, and take on
+    new challenges. I’m excited to see where my journey in IT will take me.</p>
+
+  <p>Outside of tech, I’m friendly, collaborative, and love helping others. I enjoy expressing myself 
+    through the English language and thrive in environments where I can learn from those around me. Thank 
+    you for taking the time to explore my cover page. Feel free to check out my projects or reach 
+    out to give advise or ask questions — I’m always open to connecting!</p>
+</h2>
+
+    <div class="buttons">
+      <a class="btn cv" href="CV.pdf" target="_blank">📄 View My CV</a>
+      <a class="btn project" href="index.html">🚀 Projects</a>
+      <a class="btn contact" href="contact.html">📬 Contact</a>
+    </div>
+  </div>
+
+</body>
+</html>
